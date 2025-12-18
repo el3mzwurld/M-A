@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/showcase/ALPINIST.png",
+    "name": "Alpinist Cabin",
+    "author": "Mario Botta",
+    "year": 2021
+  },
+  {
+    "id": 2,
+    "image": "/assets/showcase/blocks.jpg",
+    "name": "Bloks House",
+    "author": "Jon Krasner",
+    "year": 2024
+  },
+  {
+    "id": 3,
+    "image": "/assets/showcase/blocks2.jpg",
+    "name": "Kings Residence",
+    "author": "Jon Krasner",
+    "year": 2022
+  },
+  {
+    "id": 4,
+    "image": "/assets/showcase/swirl 2.jpg",
+    "name": "ZUCCHI HOUSE",
+    "author": "Zucchi Architetti",
+    "year": 2020
+  },
+  {
+    "id": 5,
+    "image": "/assets/showcase/red swirl.jpg",
+    "name": "Hikari House",
+    "author": "Zucchi Architetti",
+    "year": 2023
+  },
+
+  {
+    "id": 7,
+    "image": "/assets/img/Bosco_House.png",
+    "name": "Bosco House",
+    "author": "Ivan Vladimir",
+    "year": 2025
+  }
+]

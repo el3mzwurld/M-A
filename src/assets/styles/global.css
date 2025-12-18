@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Map Roman";
+  src: url("../fonts/MapRoman-Condensed-BF64dc3d4b2c054.ttf") format("truetype");
+  font-weight: 500;
+}
+
+:root {
+  --green: #1a2c14;
+  --white: #fcfcf4;
+  --Roman: "Map Roman", sans-serif;
+  --Inter: "Inter", sans-serif;
+  --SpaceMono: "Space Mono", monospace;
+}
+
+body {
+  height: auto;
+  font-family: var(--Inter);
+  font-size: 16px;
+  color: var(--green);
+  background-color: var(--white);
+}
+
+@media (min-width: 1440px) {
+  .landing {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+
+    .Sc1 {
+      width: 56%;
+      height: 100vh;
+      background: var(--green);
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      padding: 0px 30px;
+      padding-top: 25px;
+      overflow: hidden;
+      overflow-y: scroll;
+
+      .Sc1-stck {
+        .header {
+          font-family: var(--Inter);
+        }
+        .main {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px 0px;
+          border-top: 3px solid var(--white);
+          border-bottom: 3px solid var(--white);
+          font-family: var(--Roman);
+          width: 90%;
+
+          ::selection {
+            background: var(--white);
+            color: var(--green);
+          }
+        }
+      }
+      .showcase {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 0px 10px;
+        /* background-color: #fcfcf4; */
+        height: 1000px;
+        flex-shrink: 0;
+        position: relative;
+        font-family: var(--SpaceMono);
+        font-weight: 400;
+
+        div {
+        }
+        .showcase01 {
+          width: 450px;
+          height: 480px;
+          position: absolute;
+          top: 20px;
+          left: 0px;
+        }
+        .showcase02 {
+          width: 270px;
+          height: 400px;
+          position: absolute;
+          top: 50px;
+          right: 0px;
+        }
+        .showcase03 {
+          width: 60%;
+          height: 400px;
+          position: absolute;
+          top: 500px;
+          left: 0px;
+        }
+        .showcase04 {
+          width: 30%;
+          height: 470px;
+          position: absolute;
+          top: 500px;
+          right: 0px;
+        }
+      }
+
+      &::-webkit-scrollbar {
+        width: 6px;
+        height: 10px;
+        color: var(--green);
+      }
+      &::-webkit-scrollbar-track {
+        background-color: var(--white);
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--green);
+      }
+    }
+    .Sc2 {
+      flex: 1;
+      height: 100vh;
+
+      .home-hero {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+
+        .Sc2-header {
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: 0.4s ease-in;
+        }
+
+        .Sc2-showcase {
+          transition: 0.4s ease-in;
+
+          img {
+            transition: 0.4s ease-in-out;
+          }
+        }
+        .controller-info {
+          color: var(--green);
+          .controller {
+            font-style: var(--SpaceMono);
+          }
+          .info {
+            p {
+              &::selection {
+                background: var(--white);
+                color: var(--green);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+@media (min-width: 568px) and (max-width: 767px) {
+}
+@media (min-width: 375px) and (max-width: 567px) {
+}

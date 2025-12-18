@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/img/Architecture Minimaliste.jpg",
+    "name": "Maison Minimaliste"
+  },
+  {
+    "id": 2,
+    "image": "/assets/img/Bosco_House.png",
+    "name": "Bosco House"
+  },
+  {
+    "id": 3,
+    "image": "/assets/img/Japanese.jpg",
+    "name": "Kiyomizu Residence"
+  },
+  {
+    "id": 4,
+    "image": "/assets/img/Peter jan's cottage.jpg",
+    "name": "Peter Jan Cottage"
+  },
+  {
+    "id": 5,
+    "image": "/assets/img/japan interior.jpg",
+    "name": "Hikari Interior"
+  },
+  {
+    "id": 6,
+    "image": "/assets/img/house.jpg",
+    "name": "Ashwood House"
+  },
+  {
+    "id": 7,
+    "image": "/assets/img/House photo.jpg",
+    "name": "Willow Court"
+  }
+]
