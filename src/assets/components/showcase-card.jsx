@@ -6,7 +6,7 @@ const ShowCard = ({ data }) => {
       <Box
         width={"100%"}
         height={"auto"}
-        padding={"10px 5px"}
+        padding={"5px 0px"}
         display={"flex"}
         justifyContent={"space-between"}
         alignContent={"flex-start"}
