@@ -10,9 +10,7 @@ const LoadingScreen = () => {
       justifyContent="center"
       className="loader"
     >
-      <Text fontSize="24px" fontWeight={600}>
-        MARC & ASSOCIATES
-      </Text>
+      <Text fontWeight={600}>MARC & ASSOCIATES</Text>
     </Box>
   );
 };
