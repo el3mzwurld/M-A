@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import test from "../images/house.jpg";
 import data from "../data/slider.json";
 import showcaseData from "../data/showcase.json";
+import LoadingScreen from "../components/loadingPage";
 //React Icons
 import { CiMenuFries } from "react-icons/ci";
 
@@ -13,7 +14,7 @@ import {
 } from "react-icons/hi2";
 function Home() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
+  const [isLoading, setIsLoading] = useState(true);
   //Handle window Resize
   useEffect(() => {
     const handleResize = () => {
@@ -22,6 +23,29 @@ function Home() {
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  //Handle Loading state
+  // useEffect(() => {
+  //   const handleLoad = () => {
+  //     setIsLoading(false);
+  //   };
+
+  //   if (document.readyState === "complete") {
+  //     handleLoad();
+  //   } else {
+  //     window.addEventListener("load", handleLoad);
+  //   }
+
+  //   return () => {
+  //     window.removeEventListener("load", handleLoad);
+  //   };
+  // }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
   }, []);
   //Handle Random Showcase Items
 
@@ -33,6 +57,9 @@ function Home() {
 
   const [first, second, third, fourth, fifth, sixth] = Arr;
 
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
   return (
     <div className="landing">
       <Box as={"section"} className="Sc1 overflowyScroll">
