@@ -21,7 +21,12 @@ const ShowCard = ({ data }) => {
         <Text fontSize={14}>{data.name.toUpperCase()}</Text>
       </Box>
       <Box height={"80%"} width={"100%"} id="preview">
-        <Image src={data.image} width={"100%"} height={"100%"}></Image>
+        <Image
+          src={data.image}
+          width={"100%"}
+          height={"100%"}
+          loading="lazy"
+        ></Image>
       </Box>
       <Box
         display={"flex"}
