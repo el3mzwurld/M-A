@@ -2,7 +2,12 @@ import { Box, Image, Text, VStack } from "@chakra-ui/react";
 
 const ShowCard = ({ data }) => {
   return (
-    <VStack width={"100%"} height={"100%"} gap={"10px"} overflow={"hidden"}>
+    <VStack
+      width={"100%"}
+      height={"100%"}
+      gap={{ base: "5px", md: "10px" }}
+      overflow={"hidden"}
+    >
       <Box
         width={"100%"}
         height={"auto"}
@@ -10,11 +15,12 @@ const ShowCard = ({ data }) => {
         display={"flex"}
         justifyContent={"space-between"}
         alignContent={"flex-start"}
+        id="head"
       >
         <Text fontSize={14}>{data.author.toUpperCase()}</Text>
         <Text fontSize={14}>{data.name.toUpperCase()}</Text>
       </Box>
-      <Box height={"80%"} width={"100%"}>
+      <Box height={"80%"} width={"100%"} id="preview">
         <Image src={data.image} width={"100%"} height={"100%"}></Image>
       </Box>
       <Box
@@ -24,6 +30,7 @@ const ShowCard = ({ data }) => {
         width={"100%"}
         height={"auto"}
         padding={"0px 5px"}
+        id="bottom"
       >
         <Text fontSize={14}>{data.year}</Text>
       </Box>
