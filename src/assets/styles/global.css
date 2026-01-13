@@ -408,7 +408,7 @@ body {
 
   .landing {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 100%;
     overflow-x: hidden;
 
@@ -476,6 +476,62 @@ body {
             padding: 5px 10px;
             height: auto;
             text-align: left;
+          }
+        }
+      }
+    }
+    .Sc2 {
+      width: 100%;
+      height: auto;
+
+      .home-hero {
+        width: 100%;
+        height: 110vh;
+        overflow-y: scroll;
+        .Sc2-showcase {
+          width: 100%;
+          height: 55%;
+          transition: 0.5s ease;
+        }
+        .controller-info {
+          flex: 1;
+          .controller {
+            width: 100%;
+            height: 30px;
+            padding: 0px 20px;
+
+            div:nth-child(1) {
+              width: 70%;
+              p:nth-child(1) {
+                font-size: 12px;
+              }
+              p:nth-child(2) {
+                font-size: 12px;
+              }
+            }
+          }
+
+          .info {
+            padding: 10px 20px;
+
+            p {
+              width: 100%;
+              font-size: 14px;
+            }
+
+            .button-group {
+              width: 100%;
+              height: auto;
+
+              button {
+                width: 50%;
+                height: 34px;
+              }
+              p {
+                font-size: 12px;
+                text-align: right;
+              }
+            }
           }
         }
       }
